@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <button onclick="window.location.href='CELS.html.HTML'">Home</button>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h2>Informações de Contato</h2>
+            <p>Email: manuelfranciscozovozovo@gmail.com</p>
+            <p>Telefone: 936930532</p>
+            <p>Endereço: LUANDA</p>
+        </section>
+        <section id="contact-form">
+            <h2>Envie uma Mensagem</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="additional-contacts">
+            <h2>Outros Contatos</h2>
+            <p>Email Secundário: celsogengue@gmail.com</p>
+            <p>Telefone Alternativo: 925106621</p>
+            <p>WhatsApp: 925106621</p>
+            <p>Skype: celsogengue.skype</p>
+        </section>
+    </main>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0c0c0c;
+        }
+
+        header {
+            background-color: #034611;
+            color: #0a5304;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header button {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+            background-color: #0a4e0d; /* Cor marrom */
+            color: #080808;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        header button:hover {
+            background-color: #054e18;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background-color: #0f0f0f;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #05440e;
+        }
+
+        p {
+            color: #07461c;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            color: #03310d;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1rem;
+            background-color: #04300b;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555555;
+        }
+    </style>
+</body>
+</html>
